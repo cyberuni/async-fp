@@ -45,10 +45,10 @@ importers:
   packages/async-context:
     dependencies:
       iso-error:
-        specifier: ^6.0.2
-        version: 6.0.3
+        specifier: ^6.0.5
+        version: 6.0.5
       type-plus:
-        specifier: ^8.0.0-beta.10
+        specifier: 8.0.0-beta.10
         version: 8.0.0-beta.10(typescript@7.0.2)
     devDependencies:
       '@repobuddy/typescript':
@@ -61,8 +61,8 @@ importers:
         specifier: ^4.1.11
         version: 4.1.11(vitest@4.1.11)
       assertron:
-        specifier: ^11.5.3
-        version: 11.5.3
+        specifier: ^11.6.0
+        version: 11.6.0(typescript@7.0.2)
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -92,8 +92,8 @@ importers:
         specifier: ^4.1.11
         version: 4.1.11(vitest@4.1.11)
       assertron:
-        specifier: ^11.5.3
-        version: 11.5.3
+        specifier: ^11.6.0
+        version: 11.6.0(typescript@7.0.2)
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -101,7 +101,7 @@ importers:
         specifier: ^0.22.14
         version: 0.22.14(oxc-resolver@11.24.2)(typescript@7.0.2)
       type-plus:
-        specifier: ^8.0.0-beta.10
+        specifier: 8.0.0-beta.10
         version: 8.0.0-beta.10(typescript@7.0.2)
       vitest:
         specifier: ^4.1.11
@@ -110,7 +110,7 @@ importers:
   packages/gizmo:
     dependencies:
       type-plus:
-        specifier: ^8.0.0-beta.10
+        specifier: 8.0.0-beta.10
         version: 8.0.0-beta.10(typescript@7.0.2)
     devDependencies:
       '@repobuddy/typescript':
@@ -120,8 +120,8 @@ importers:
         specifier: ^4.1.11
         version: 4.1.11(vitest@4.1.11)
       assertron:
-        specifier: ^11.5.3
-        version: 11.5.3
+        specifier: ^11.6.0
+        version: 11.6.0(typescript@7.0.2)
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -1423,9 +1423,9 @@ packages:
     resolution: {integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==}
     engines: {node: '>=12'}
 
-  assertron@11.5.3:
-    resolution: {integrity: sha512-cCB8v8SKcOjYjdrDfOHWAlGIYznBeShTcaJQ4M9vLzSrgD86epmD4wMfvyRW38GjO7VX8eSR5P4O3HWTuITtpg==}
-    engines: {node: '>= 10'}
+  assertron@11.6.0:
+    resolution: {integrity: sha512-10ISpYENayWRyH7bwz1l3jfYeyNv0W4TlJ5t2vNfPtKclHnpCXGKv0Vfr7xCGdgR843U2H3+EfUY12bOwjPDzA==}
+    engines: {node: '>=20'}
 
   ast-v8-to-istanbul@1.0.5:
     resolution: {integrity: sha512-UPAgKJFSEGMWSDr3LX4tqnAb4f7KGT8O40Tyx8wbYmmZ/yn58lNCm8h3svs3eXgiGd5AXxz8NDOvXWvicq+rJA==}
@@ -1712,8 +1712,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  iso-error@6.0.3:
-    resolution: {integrity: sha512-QVdiQdEbZ3aiW7KMxenB0jvKygpiy9FMjitW6q6DaGXbVjLiu3zYPmrKG/Jts7xTXSIrZ8Wrst0KaS+r9+ys7g==}
+  iso-error@6.0.5:
+    resolution: {integrity: sha512-e6RUrLKvZhUzkjVYozUo8RKnZsKtoEljdPyzXWJfPfn2jhZWn74xyEYYrlWDFNr/+zQcyDEmXYp7ir+hzbJ8MA==}
     engines: {node: '>= 10'}
 
   istanbul-lib-coverage@3.2.2:
@@ -1849,8 +1849,8 @@ packages:
     resolution: {integrity: sha512-TXfryirbmq34y8QBwgqCVLi+8oA3oWx2eAnSn62ITyEhEYaWRlVZ2DvMM9eZbMs/RfxPu/PK/aBLyGj4IrqMHw==}
     engines: {node: '>=18'}
 
-  path-equal@1.2.5:
-    resolution: {integrity: sha512-i73IctDr3F2W+bsOWDyyVm/lqsXO47aY9nsFZUjTT/aljSbkxHxxCoyZ9UUrM8jK0JVod+An+rl48RCsvWM+9g==}
+  path-equal@1.2.8:
+    resolution: {integrity: sha512-rCJWMlXlk9lZ2FEllgvh2IgPj/kxMx2sOeqtFNLO8dxEY0I4hBTa+ZW3JAsgeiTe8vL4MifATVDwxF9nGUI7HQ==}
 
   path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
@@ -1947,8 +1947,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  satisfier@5.4.3:
-    resolution: {integrity: sha512-OyQiZr6HmUtX57LXfAeK3DyCtHup3rNM/v1HN7gbWBRuOTPhDd2PbxbWfJxEeB5se/Tiloo/0kH2bzWlmVa2VQ==}
+  satisfier@5.4.4:
+    resolution: {integrity: sha512-mjZ8PeqIuOI37rVglvx6JINVcRdXPqVWZkbg99oJyganLAvut4qlCAUDyvqbI7aYGQzF+1julBtcpL35r1NV1A==}
 
   search-packages@2.2.1:
     resolution: {integrity: sha512-ejUjMEDITHiKzfAgtpcIUXAliJK+jLb7DMyUaqVoyY1uwKuDajnccvx8o8woEuKvsDjH3j3mLhy6Uyc8v1UCHA==}
@@ -2040,9 +2040,6 @@ packages:
 
   tersify@3.12.1:
     resolution: {integrity: sha512-VwzXGHZSOB4T27s4uvh9v8FYrNXyfVz0nBQi28TDwrZoQwT8ZJUp1W2Ff73ekN07stJSb0D+pr6iXeNeFqTI6Q==}
-
-  tersify@4.0.3:
-    resolution: {integrity: sha512-u7h3PUL/kMDivCcBEHG1vIbbGxwCYN2yQKxP9GzMRFKItyncimI0RGpZLlUhdW7MkCYirku2QDvEWC7hpzPebw==}
 
   tersify@4.0.6:
     resolution: {integrity: sha512-+z2dTeRvbPyI7qiAmBY+VgWnhhN9IuaGjgrPfeF33hI4A/Yd9KT11tbc4l8vfIA3L/5EWiE0swvxOfAckGRuzA==}
@@ -3230,14 +3227,16 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  assertron@11.5.3:
+  assertron@11.6.0(typescript@7.0.2):
     dependencies:
       is-promise: 4.0.0
-      iso-error: 6.0.3
-      path-equal: 1.2.5
-      satisfier: 5.4.3
-      tersify: 4.0.3
-      type-plus: 7.6.2
+      iso-error: 6.0.5
+      path-equal: 1.2.8
+      satisfier: 5.4.4
+      tersify: 4.0.6
+      type-plus: 8.0.0-beta.10(typescript@7.0.2)
+    transitivePeerDependencies:
+      - typescript
 
   ast-v8-to-istanbul@1.0.5:
     dependencies:
@@ -3429,7 +3428,7 @@ snapshots:
   find-installed-packages@3.2.0:
     dependencies:
       temp: 0.9.4
-      unpartial: 1.0.6
+      unpartial: 1.0.7
 
   formatly@0.7.0:
     dependencies:
@@ -3521,7 +3520,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  iso-error@6.0.3: {}
+  iso-error@6.0.5: {}
 
   istanbul-lib-coverage@3.2.2: {}
 
@@ -3693,7 +3692,7 @@ snapshots:
 
   parse-ms@4.0.0: {}
 
-  path-equal@1.2.5: {}
+  path-equal@1.2.8: {}
 
   path-is-absolute@1.0.1: {}
 
@@ -3806,9 +3805,9 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.53.1
       fsevents: 2.3.3
 
-  satisfier@5.4.3:
+  satisfier@5.4.4:
     dependencies:
-      tersify: 4.0.3
+      tersify: 4.0.6
 
   search-packages@2.2.1: {}
 
@@ -3841,12 +3840,12 @@ snapshots:
       color-map: 2.2.0
       standard-log: 12.1.2
       supports-color: 8.1.1
-      unpartial: 1.0.6
+      unpartial: 1.0.7
 
   standard-log@12.1.2:
     dependencies:
       '@just-func/types': 0.5.1
-      iso-error: 6.0.3
+      iso-error: 6.0.5
       ms: 2.1.3
       type-plus: 7.6.2
       upper-case: 2.0.2
@@ -3889,13 +3888,7 @@ snapshots:
     dependencies:
       acorn: 8.18.0
       is-buffer: 2.0.5
-      unpartial: 1.0.6
-
-  tersify@4.0.3:
-    dependencies:
-      acorn: 8.18.0
-      is-buffer: 2.0.5
-      unpartial: 1.0.6
+      unpartial: 1.0.7
 
   tersify@4.0.6:
     dependencies:
@@ -3956,7 +3949,7 @@ snapshots:
   type-plus@5.6.0:
     dependencies:
       tersify: 3.12.1
-      unpartial: 1.0.6
+      unpartial: 1.0.7
 
   type-plus@7.6.2:
     dependencies:
