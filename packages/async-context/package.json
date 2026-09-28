@@ -59,7 +59,7 @@
 		"verify": "pnpm run lint && pnpm run typecheck && pnpm run build && pnpm run coverage"
 	},
 	"dependencies": {
-		"iso-error": "^6.0.5",
+		"iso-error": "^7.0.0",
 		"type-plus": "8.0.0-beta.11"
 	},
 	"devDependencies": {

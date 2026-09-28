@@ -45,8 +45,8 @@ importers:
   packages/async-context:
     dependencies:
       iso-error:
-        specifier: ^6.0.5
-        version: 6.0.5
+        specifier: ^7.0.0
+        version: 7.0.0
       type-plus:
         specifier: 8.0.0-beta.11
         version: 8.0.0-beta.11(typescript@7.0.2)
@@ -1418,10 +1418,6 @@ packages:
   is-unicode-supported@2.1.0:
     resolution: {integrity: sha512-mE00Gnza5EEB3Ds0HfMyllZzbBrmLOX3vfWoj9A9PEnTfratQ/BcaJOuMhnkhjXvb2+FkY3VuHqtAGpTPmglFQ==}
     engines: {node: '>=18'}
-
-  iso-error@6.0.5:
-    resolution: {integrity: sha512-e6RUrLKvZhUzkjVYozUo8RKnZsKtoEljdPyzXWJfPfn2jhZWn74xyEYYrlWDFNr/+zQcyDEmXYp7ir+hzbJ8MA==}
-    engines: {node: '>= 10'}
 
   iso-error@7.0.0:
     resolution: {integrity: sha512-GyHH/0Xyug/vO9LOr5zKI3fyEAAJuBuXYNZE+Fs5DmpUmH4oRbcR8aYyql+MGi8CY53qPcU1bNJEjC5QsesFhA==}
@@ -3111,8 +3107,6 @@ snapshots:
   is-stream@4.0.1: {}
 
   is-unicode-supported@2.1.0: {}
-
-  iso-error@6.0.5: {}
 
   iso-error@7.0.0: {}
 
