@@ -1,6 +1,6 @@
 import { AssertOrder, a } from 'assertron'
 import 'setimmediate'
-import { assertType, testType } from 'type-plus'
+import { testType } from 'type-plus'
 import { describe, expect, it, test } from 'vitest'
 import { AsyncContext, BlockingGetDetected, ContextAlreadyInitialized } from './index.js'
 
@@ -11,7 +11,7 @@ describe('constructor', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 1 })
-		assertType<{ a: number }>(a)
+		a satisfies { a: number }
 	})
 
 	test('with Promise', async () => {
@@ -20,7 +20,7 @@ describe('constructor', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 1 })
-		assertType<{ a: number }>(a)
+		a satisfies { a: number }
 	})
 
 	test('with initialize function', async () => {
@@ -29,7 +29,7 @@ describe('constructor', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 1 })
-		assertType<{ a: number }>(a)
+		a satisfies { a: number }
 	})
 
 	test('with async initialize function', async () => {
@@ -37,7 +37,7 @@ describe('constructor', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 1 })
-		assertType<{ a: number }>(a)
+		a satisfies { a: number }
 	})
 
 	test('constructor initialize function is only called once', async () => {
@@ -51,7 +51,7 @@ describe('constructor', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 1 })
-		assertType<{ a: number }>(a)
+		a satisfies { a: number }
 		o.end()
 	})
 
@@ -66,7 +66,7 @@ describe('constructor', () => {
 		const ctx = new AsyncContext<{ a: number }, { a: string; b: string }>()
 		const a = await ctx.initialize({ a: 1 }).extend({ b: 'b' }).get()
 
-		assertType<{ a: number; b: string }>(a)
+		a satisfies { a: number; b: string }
 	})
 })
 
@@ -78,7 +78,7 @@ describe('initialize()', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 1 })
-		assertType<Record<string | symbol, any>>(a)
+		a satisfies Record<string | symbol, any>
 	})
 
 	it('can specify type through generics in the constructor (recommended)', async () => {
@@ -88,7 +88,7 @@ describe('initialize()', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 'a' })
-		assertType<{ a: string }>(a)
+		a satisfies { a: string }
 	})
 
 	it('returns itself with adjusted Init type', async () => {
@@ -97,7 +97,7 @@ describe('initialize()', () => {
 		const a = await ctx.get()
 
 		expect(a).toEqual({ a: 1 })
-		assertType<{ a: number }>(a)
+		a satisfies { a: number }
 	})
 
 	test('with object', async () => {
@@ -211,7 +211,7 @@ describe('extend()', () => {
 
 		const result = await ctx.get()
 
-		assertType<{ type: 'a' | 'b'; value: number }>(result)
+		result satisfies { type: 'a' | 'b'; value: number }
 		expect(result).toEqual({ type: 'a', value: 1 })
 	})
 
@@ -223,7 +223,7 @@ describe('extend()', () => {
 
 		const result = await ctx.get()
 
-		assertType<{ type: 'a' | 'b'; value: boolean }>(result)
+		result satisfies { type: 'a' | 'b'; value: boolean }
 		expect(result).toEqual({ type: 'a', value: true })
 	})
 
@@ -349,7 +349,7 @@ describe('get()', () => {
 		const a = await ctx.get<{ a: 1 }>()
 
 		expect(a).toEqual({ a: 1, b: 2 })
-		assertType<{ a: 1 }>(a)
+		a satisfies { a: 1 }
 	})
 
 	it('should detect blocking get call within transformation', async () => {
