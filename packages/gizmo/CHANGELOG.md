@@ -1,5 +1,12 @@
 # @unional/gizmo
 
+## 3.0.1
+
+### Patch Changes
+
+- 51231a8: Update `type-plus` to `8.0.0-beta.12`.
+  `@unional/async-context` also updates `iso-error` to `^7.0.0`.
+
 ## 3.0.0
 
 ### Major Changes
