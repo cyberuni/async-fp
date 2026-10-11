@@ -1,6 +1,6 @@
 import { AssertOrder, a } from 'assertron'
 import 'setimmediate'
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { describe, expect, it, test } from 'vitest'
 import { AsyncContext, BlockingGetDetected, ContextAlreadyInitialized } from './index.js'
 

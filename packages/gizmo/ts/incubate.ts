@@ -1,4 +1,4 @@
-import { type AnyFunction, isType, type KeyTypes, type LeftJoin, type RequiredKeys } from 'type-plus'
+import type { AnyFunction, KeyTypes, LeftJoin, RequiredKeys } from 'type-plus'
 import type { ExtractGizmoDeps, Gizmo, InferGizmo, MissingDependency } from './types.js'
 
 const closableApps = new Map<Record<KeyTypes, unknown>, CallableFunction[]>()
@@ -58,7 +58,7 @@ export function incubate(base?: Record<string | symbol, unknown>) {
 				},
 			} as Record<string | symbol, unknown>
 			for (const dep of dependencies) {
-				if (isType<{ gizmo: Gizmo }>(dep, (d) => !!d.gizmo)) {
+				if (isGizmoDep(dep)) {
 					await injectGizmo(result, dep.gizmo)
 				} else {
 					Object.assign(result, dep.instance)
@@ -184,4 +184,9 @@ type InferIncubator<R, G extends Gizmo> =
 
 export namespace incubate {
 	export type Infer<Incubator extends GizmoIncubator<unknown>> = Awaited<ReturnType<Incubator['create']>>
+}
+
+// Inlined rather than imported: `type-plus` is ESM only, and the CJS build must not `require` it.
+function isGizmoDep(dep: unknown): dep is { gizmo: Gizmo } {
+	return !!(dep as { gizmo?: Gizmo }).gizmo
 }

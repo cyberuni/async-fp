@@ -179,8 +179,8 @@ importers:
         specifier: ^21.2.2
         version: 21.2.3
       '@repobuddy/biome':
-        specifier: ^2.4.0
-        version: 2.5.0(@biomejs/biome@2.5.15)
+        specifier: ^2.5.1
+        version: 2.5.1(@biomejs/biome@2.5.15)
       '@types/node':
         specifier: ^24.13.3
         version: 24.19.1
@@ -206,12 +206,12 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       type-plus:
-        specifier: 8.0.0-beta.12
-        version: 8.0.0-beta.12(typescript@7.0.2)
+        specifier: 8.0.0
+        version: 8.0.0(typescript@7.0.2)
     devDependencies:
       '@repobuddy/typescript':
-        specifier: ^2.2.0
-        version: 2.2.1(typescript@7.0.2)
+        specifier: ^2.2.2
+        version: 2.2.2(typescript@7.0.2)
       '@types/setimmediate':
         specifier: ^1.0.4
         version: 1.0.4
@@ -219,7 +219,7 @@ importers:
         specifier: ^5.0.0
         version: 5.0.3(vitest@5.0.3)
       assertron:
-        specifier: ^11.7.0
+        specifier: ^11.7.1
         version: 11.7.1(typescript@7.0.2)
       rimraf:
         specifier: ^6.1.3
@@ -244,13 +244,13 @@ importers:
         version: link:../gizmo
     devDependencies:
       '@repobuddy/typescript':
-        specifier: ^2.2.0
-        version: 2.2.1(typescript@7.0.2)
+        specifier: ^2.2.2
+        version: 2.2.2(typescript@7.0.2)
       '@vitest/coverage-v8':
         specifier: ^5.0.0
         version: 5.0.3(vitest@5.0.3)
       assertron:
-        specifier: ^11.7.0
+        specifier: ^11.7.1
         version: 11.7.1(typescript@7.0.2)
       rimraf:
         specifier: ^6.1.3
@@ -259,8 +259,8 @@ importers:
         specifier: ^0.23.0
         version: 0.23.0(oxc-resolver@11.24.2)(typescript@7.0.2)
       type-plus:
-        specifier: 8.0.0-beta.12
-        version: 8.0.0-beta.12(typescript@7.0.2)
+        specifier: 8.0.0
+        version: 8.0.0(typescript@7.0.2)
       vitest:
         specifier: ^5.0.0
         version: 5.0.3(@types/node@24.19.1)(@vitest/coverage-v8@5.0.3)(vite@8.3.2(@types/node@24.19.1)(jiti@2.7.0)(yaml@2.9.1))
@@ -268,17 +268,17 @@ importers:
   packages/gizmo:
     dependencies:
       type-plus:
-        specifier: 8.0.0-beta.12
-        version: 8.0.0-beta.12(typescript@7.0.2)
+        specifier: 8.0.0
+        version: 8.0.0(typescript@7.0.2)
     devDependencies:
       '@repobuddy/typescript':
-        specifier: ^2.2.0
-        version: 2.2.1(typescript@7.0.2)
+        specifier: ^2.2.2
+        version: 2.2.2(typescript@7.0.2)
       '@vitest/coverage-v8':
         specifier: ^5.0.0
         version: 5.0.3(vitest@5.0.3)
       assertron:
-        specifier: ^11.7.0
+        specifier: ^11.7.1
         version: 11.7.1(typescript@7.0.2)
       rimraf:
         specifier: ^6.1.3
@@ -807,13 +807,13 @@ packages:
   '@quansync/fs@1.1.0':
     resolution: {integrity: sha512-qAPG/t3HqML1TlN7sY/pTbEjzFVAKsMjNNMGheyDosro+kT4iw2KCUoHcVdmliwWjorm4elZbgNQyU2eD97eDg==}
 
-  '@repobuddy/biome@2.5.0':
-    resolution: {integrity: sha512-/BGDUyepN6raSPBt+LEoLsWuCLFt5mhxNoogGnIF8voeIft/Oj/NlygGMNl8B0SF2QKw95TxH/WWcJmarW7Xnw==}
+  '@repobuddy/biome@2.5.1':
+    resolution: {integrity: sha512-sdNvV6T5PTFPD1CrpiByf92Zm4nsvoAlBObx1x74LzKPOkaZ0rB7AAEBXMUZgjLYBoc2HGDXjx7qKxiIOn37Ww==}
     peerDependencies:
       '@biomejs/biome': '>= 2'
 
-  '@repobuddy/typescript@2.2.1':
-    resolution: {integrity: sha512-r4LcxLB99GWEXZRPvceobwX8tX6Ax1pFraRV/jTdk/lAkT0Xz8+TcVckt9U+jK5/mgqLCai/1av7/onZeuQ1zw==}
+  '@repobuddy/typescript@2.2.2':
+    resolution: {integrity: sha512-ZEE1l5VpYuCjPDZgP9/nGe6zojplHTaai9Y7qgSYduOTx/8uI9IAulU3MbfMGtXLuCuQPhRrIu+vvQ86dj1yxw==}
 
   '@rolldown/binding-android-arm-eabi@1.2.12':
     resolution: {integrity: sha512-dB/a1214qKfHMXCpgqR4OZT+jS4kTyEXbQGJPqzobt5EwH5rX080pxE37alt3RzvR1bf1Yz/yGqRfrYAxuPw0A==}
@@ -2014,6 +2014,15 @@ packages:
     resolution: {integrity: sha512-RhXHbqfvY6o3xt/zSHCwSNwLrZlXiqHzewi4eAj9PtZ1T1CqgMJ2yIDb7SKPTG9IikTm925mfzL6hldQVdyNWw==}
     hasBin: true
 
+  type-plus@8.0.0:
+    resolution: {integrity: sha512-wYKemYpT2XPgZyqZUvo6pT0ZiwWHcLJMyR68ZjY4IB96ozUpxrb6M7pj9xYzNcBHWG4r17WqXnkGRQZrHAWs7A==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    peerDependencies:
+      typescript: '>= 5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   type-plus@8.0.0-beta.12:
     resolution: {integrity: sha512-isf19V90L8JOn9VBWWwUfH8DU6G3dfPptr3R+JtraYWHqLAsXYI2f9x1HZVTkajrkSffdEbetXUXf7FcIjSIRg==}
     peerDependencies:
@@ -2664,11 +2673,11 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@repobuddy/biome@2.5.0(@biomejs/biome@2.5.15)':
+  '@repobuddy/biome@2.5.1(@biomejs/biome@2.5.15)':
     dependencies:
       '@biomejs/biome': 2.5.15
 
-  '@repobuddy/typescript@2.2.1(typescript@7.0.2)':
+  '@repobuddy/typescript@2.2.2(typescript@7.0.2)':
     dependencies:
       clibuilder: 11.3.2(typescript@7.0.2)
       dirname-filename-esm: 1.1.2
@@ -3619,6 +3628,12 @@ snapshots:
       '@turbo/linux-arm64': 2.11.7
       '@turbo/windows-64': 2.11.7
       '@turbo/windows-arm64': 2.11.7
+
+  type-plus@8.0.0(typescript@7.0.2):
+    dependencies:
+      unpartial: 1.0.8
+    optionalDependencies:
+      typescript: 7.0.2
 
   type-plus@8.0.0-beta.12(typescript@7.0.2):
     dependencies:

@@ -1,5 +1,5 @@
 import { AssertOrder } from 'assertron'
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { expect, it } from 'vitest'
 import {
 	dynamicRequiredGizmo,

@@ -1,6 +1,12 @@
 // istanbul ignore file
-import { testType } from 'type-plus'
+import type { IsEqual } from 'type-plus'
 import { define } from './define.js'
+
+// A type-only stand-in for `testType.equal` from `type-plus/testing`. This module ships in the
+// `testing` entry, and `type-plus` is ESM only, so the CJS build must not `require` it.
+const testType = {
+	equal<A, B>(_expected: IsEqual<A, B>) {},
+}
 
 /**
  * Leaf gizmo with no dependencies.
