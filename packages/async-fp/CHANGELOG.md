@@ -1,5 +1,13 @@
 # Change Log
 
+## 10.0.2
+
+### Patch Changes
+
+- Updated dependencies [59308be]
+  - @unional/async-context@10.0.2
+  - @unional/gizmo@3.0.2
+
 ## 10.0.1
 
 ### Patch Changes

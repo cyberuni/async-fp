@@ -1,5 +1,13 @@
 # @unional/gizmo
 
+## 3.0.2
+
+### Patch Changes
+
+- 59308be: Update `type-plus` to 8.0.0.
+  
+  `@unional/gizmo` no longer loads `type-plus` at runtime, so its CommonJS build does not `require` the now ESM-only package.
+
 ## 3.0.1
 
 ### Patch Changes
