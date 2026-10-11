@@ -1,5 +1,5 @@
 import { a } from 'assertron'
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { expect, it } from 'vitest'
 import { asyncAssert } from './index.js'
 

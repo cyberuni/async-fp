@@ -1,4 +1,4 @@
-import { testType } from 'type-plus'
+import { testType } from 'type-plus/testing'
 import { expect, it } from 'vitest'
 import { type LeafGizmo, leafGizmo, leafWithStartGizmo, staticRequiredGizmo } from './fixtures.js'
 import { define, incubate } from './index.js'
