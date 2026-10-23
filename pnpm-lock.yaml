@@ -206,8 +206,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       type-plus:
-        specifier: 8.0.0
-        version: 8.0.0(typescript@7.0.2)
+        specifier: 8.0.1
+        version: 8.0.1(typescript@7.0.2)
     devDependencies:
       '@repobuddy/typescript':
         specifier: ^2.2.2
@@ -259,8 +259,8 @@ importers:
         specifier: ^0.23.0
         version: 0.23.1(oxc-resolver@11.24.2)(typescript@7.0.2)
       type-plus:
-        specifier: 8.0.0
-        version: 8.0.0(typescript@7.0.2)
+        specifier: 8.0.1
+        version: 8.0.1(typescript@7.0.2)
       vitest:
         specifier: ^5.0.0
         version: 5.0.5(@types/node@24.19.2)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@24.19.2)(jiti@2.7.0)(yaml@2.9.1))
@@ -268,8 +268,8 @@ importers:
   packages/gizmo:
     dependencies:
       type-plus:
-        specifier: 8.0.0
-        version: 8.0.0(typescript@7.0.2)
+        specifier: 8.0.1
+        version: 8.0.1(typescript@7.0.2)
     devDependencies:
       '@repobuddy/typescript':
         specifier: ^2.2.2
@@ -1837,8 +1837,8 @@ packages:
     resolution: {integrity: sha512-k2ev5dv9OgP2pJwaPuydkZdid+haX2U5TDGcPtpAz0gb0nbRR3eXY/cpfrlvHih52YRTxWIcRVKc0ri3C2Scrg==}
     hasBin: true
 
-  type-plus@8.0.0:
-    resolution: {integrity: sha512-wYKemYpT2XPgZyqZUvo6pT0ZiwWHcLJMyR68ZjY4IB96ozUpxrb6M7pj9xYzNcBHWG4r17WqXnkGRQZrHAWs7A==}
+  type-plus@8.0.1:
+    resolution: {integrity: sha512-x1OtyTGuqmmnNu5+iL93KVsHLl6PMeRWUDN8yz+X4f86TuEcXSzX7EAdBK+3CFSp2jyVnQuzvof1Z/3Noc3Dig==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       typescript: '>= 5.4.0'
@@ -2747,7 +2747,7 @@ snapshots:
       path-equal: 1.2.8
       satisfier: 5.4.6
       tersify: 4.0.8
-      type-plus: 8.0.0(typescript@7.0.2)
+      type-plus: 8.0.1(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -3298,7 +3298,7 @@ snapshots:
       '@turbo/windows-64': 2.11.9
       '@turbo/windows-arm64': 2.11.9
 
-  type-plus@8.0.0(typescript@7.0.2):
+  type-plus@8.0.1(typescript@7.0.2):
     dependencies:
       unpartial: 1.0.8
     optionalDependencies:
