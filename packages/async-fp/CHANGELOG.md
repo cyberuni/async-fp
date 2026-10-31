@@ -1,5 +1,14 @@
 # Change Log
 
+## 10.0.3
+
+### Patch Changes
+
+- 3dfd80d: Include `CHANGELOG.md` in the published package.
+- Updated dependencies [3dfd80d]
+  - @unional/async-context@10.0.3
+  - @unional/gizmo@3.0.3
+
 ## 10.0.2
 
 ### Patch Changes

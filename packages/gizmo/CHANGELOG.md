@@ -1,5 +1,11 @@
 # @unional/gizmo
 
+## 3.0.3
+
+### Patch Changes
+
+- 3dfd80d: Include `CHANGELOG.md` in the published package.
+
 ## 3.0.2
 
 ### Patch Changes
