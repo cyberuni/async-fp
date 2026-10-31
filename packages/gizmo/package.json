@@ -55,7 +55,8 @@
 		"esm",
 		"testing",
 		"ts",
-		"!**/*.{spec,unit,accept,system,perf,stress,test}.*"
+		"!**/*.{spec,unit,accept,system,perf,stress,test}.*",
+		"CHANGELOG.md"
 	],
 	"scripts": {
 		"build": "tsdown",
